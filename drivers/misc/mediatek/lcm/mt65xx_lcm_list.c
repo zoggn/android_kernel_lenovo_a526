@@ -202,6 +202,7 @@ extern LCM_DRIVER kr101ia2s_dsi_vdo_lcm_drv;
 extern LCM_DRIVER r69338_hd720_dsi_vdo_jdi_dw8755a_drv;
 extern LCM_DRIVER otm9605a_qhd_dsi_vdo_drv;
 extern LCM_DRIVER ili9806e_dsi_vdo_fwvga_drv;
+extern LCM_DRIVER ili9806e_fwvga_dsi_vdo_lcm_drv;
 
 LCM_DRIVER* lcm_driver_list[] = 
 {
@@ -274,6 +275,10 @@ LCM_DRIVER* lcm_driver_list[] =
 
 #if defined(ILI9806E_DSI_VDO_FWVGA)
 	&ili9806e_dsi_vdo_fwvga_drv,
+#endif
+
+#if defined(ILI9806E_FWVGA_DSI_VDO)
+	&ili9806e_fwvga_dsi_vdo_lcm_drv,
 #endif
 
 #if defined(LP079X01)
